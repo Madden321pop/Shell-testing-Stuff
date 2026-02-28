@@ -20,21 +20,5 @@ if [ -d "$MAIN_DIR" ]; then
 else
     clear
     echo "Starting Application..."
-    echo "Copying Github..."
-
-    cd "$HOME" || exit
-
-    git clone https://github.com/Madden321pop/Shell-testing-Stuff
-
     
-
-    if [ -d "$MAIN_DIR" ]; then
-        cd "Shell-testing-Stuff" || exit
-        echo "Fully Entered $MAIN_DIR!"
-        echo "Success... Moving on."
-
-    else
-        echo "Error: Git Clone Failed!"
-        exit 1
-    fi
 fi
